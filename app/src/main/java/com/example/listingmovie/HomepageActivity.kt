@@ -3,6 +3,7 @@ package com.example.listingmovie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.listingmovie.adapter.MovieAdapter
 import com.example.listingmovie.databinding.ActivityHomepageBinding
 import com.example.listingmovie.models.Movie
 import com.example.listingmovie.models.MovieResponse

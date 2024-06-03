@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".view.ProfileActivity">
 
     <TextView
         android:id="@+id/tvProfile"
@@ -35,11 +35,11 @@
 
 
     <EditText
-        android:id="@+id/etFullname"
+        android:id="@+id/etEmail"
         android:layout_width="342dp"
         android:layout_height="49dp"
         android:ems="10"
-        android:hint="Type Fullname"
+        android:hint="Type email"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,12 +49,12 @@
         app:layout_constraintVertical_bias="0.344" />
 
     <EditText
-        android:id="@+id/etDate"
+        android:id="@+id/etPassword"
         android:layout_width="342dp"
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="date"
-        android:hint="input birth date"
+        android:hint="Type Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.539"
@@ -63,11 +63,11 @@
         app:layout_constraintVertical_bias="0.431" />
 
     <EditText
-        android:id="@+id/etAddress"
+        android:id="@+id/etPassword2"
         android:layout_width="342dp"
         android:layout_height="49dp"
         android:ems="10"
-        android:hint="Type Address"
+        android:hint="Type confirm password"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="227dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +90,7 @@
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="227dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,4 +1,4 @@
-package com.example.listingmovie
+package com.example.listingmovie.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
 
-class MovieAdapter(val callback: List<Movie>):
+class MovieAdapter(private val callback: List<Movie>):
     RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
 
     private val diffCallback = object : DiffUtil.ItemCallback<Movie>(){
@@ -41,6 +41,10 @@ class MovieAdapter(val callback: List<Movie>):
             binding.root.setOnClickListener{
                 callback(data)
             }
+        }
+
+        fun bind(data: Movie?, callback: List<Movie>) {
+
         }
     }
 
