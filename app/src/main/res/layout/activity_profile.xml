@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".view.ProfileActivity">
 
+
     <TextView
         android:id="@+id/tvProfile"
         android:layout_width="174dp"
@@ -14,10 +15,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintHorizontal_bias="0.717"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <EditText
         android:id="@+id/etUsername"
@@ -97,5 +98,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.933" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="89dp"-->
+<!--        android:background="@color/pink"-->
+<!--        app:shapeAppearanceOverlay="@style/circular"-->
+<!--        app:strokeWidth="5dp"-->
+<!--        app:strokeColor="@color/red"-->
+<!--        android:padding="5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.147"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.077"-->
+<!--        app:srcCompat="@drawable/baseline_person_24" />-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:background="@color/pink"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeWidth="5dp"
+        app:strokeColor="@color/red"
+        app:srcCompat="@drawable/baseline_person_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
