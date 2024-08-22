@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.listingmovie.HomepageActivity
 import com.example.listingmovie.R
 import com.example.listingmovie.databinding.ActivityMainBinding
 
@@ -50,7 +49,7 @@ class LoginActivity : AppCompatActivity(), View.OnFocusChangeListener, View.OnCl
 
     private fun performLogin(){
         if(validateUsername() && validatePassword()){
-            val intent = Intent(this, HomepageActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             finish()
         }

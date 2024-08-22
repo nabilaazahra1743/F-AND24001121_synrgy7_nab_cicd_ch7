@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.Toast
 import com.example.listingmovie.R
 import com.example.listingmovie.databinding.ActivityRegisterBinding
+import com.google.firebase.perf.ktx.performance
+import com.google.firebase.perf.metrics.Trace
+import com.google.firebase.ktx.Firebase
 
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener, View.OnFocusChangeListener{
@@ -16,6 +19,10 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener, View.OnFocus
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val myTrace = Firebase.performance.newTrace("test_trace")
+        myTrace.start()
+
         mBinding = ActivityRegisterBinding.inflate(LayoutInflater.from(this))
         setContentView(R.layout.activity_register)
 
@@ -25,6 +32,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener, View.OnFocus
         mBinding.etPassword2.onFocusChangeListener = this
 
         mBinding.btnRegister.setOnClickListener(this)
+        myTrace.stop()
     }
 
     private fun validateUsername(): Boolean{

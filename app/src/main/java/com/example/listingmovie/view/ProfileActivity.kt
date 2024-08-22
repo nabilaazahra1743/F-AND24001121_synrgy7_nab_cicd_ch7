@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.listingmovie.R
 import com.example.listingmovie.databinding.ActivityProfileBinding
 
+
+
 class ProfileActivity : AppCompatActivity(), View.OnClickListener, View.OnFocusChangeListener {
 
     private lateinit var mBinding: ActivityProfileBinding
