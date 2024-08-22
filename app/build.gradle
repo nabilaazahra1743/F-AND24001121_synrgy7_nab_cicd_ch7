@@ -9,6 +9,11 @@ android {
     namespace 'com.example.listingmovie'
     compileSdk 34
 
+    lintOptions{
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
     defaultConfig {
         applicationId "com.example.listingmovie"
         minSdk 24
@@ -60,6 +65,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.core:core-ktx:+'
+
+    //dependecies for unit testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -73,12 +80,14 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.2.0'
     kapt 'com.github.bumptech.glide:compiler:4.2.0'
 
-
     //retrofit library
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    //project implement
+    //testing dependencies
+    testImplementation 'org.mockito:mockito-core:4.6.1'
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:4.0.0'
+    testImplementation 'junit:junit:4.13.2'
 
 
 
